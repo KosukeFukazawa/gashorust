@@ -7,12 +7,13 @@ Image processing 100 on Rust.
 
 ## Install
 1. Please install Rust from [Rust official webpage](https://www.rust-lang.org/learn/get-started). 
-2. Test that you could installed Rust and Cargo like: `cargo --version`
+2. Then, check cargo command: `cargo --version`
 3. Clone this repository on your device: 
 ```
 git clone https://github.com/KosukeFukazawa/gashorust.git
 ```
-All questions reside in [Gasyori100knock](https://github.com/minido/Gasyori100knock-1).
+All questions reside in [Gasyori100knock](https://github.com/minido/Gasyori100knock-1).  
+Please refer to it.
 
 ### dependencies
 #### Crate

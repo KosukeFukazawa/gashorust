@@ -11,8 +11,7 @@ fn main() {
 }
 
 fn run(code_num: u8) {
-    match code_num {
-        1 => q001_010::q001::run(),
-        _ => {},
+    if code_num <= 10 {
+        q001_010::run(code_num);
     }
 }
