@@ -5,6 +5,11 @@ Image processing 100 on Rust.
 このリポジトリは[画像処理100本ノック](https://github.com/minido/Gasyori100knock-1)をRustで実装したものです。  
 個人のRust勉強用に作成したものであるため、冗長なコードや間違った使い方が多く含まれると思われます。
 
+## Caution
+このリポジトリは作業中であるため、完成しておりません。
+空いた時間で作業しているため、更新頻度は非常に遅いです。  
+なるべくImageクレート以外は使用しない、単純な実装をしていきます。
+
 ## Install
 1. Please install Rust from [Rust official webpage](https://www.rust-lang.org/learn/get-started). 
 2. Then, check cargo command: `cargo --version`
