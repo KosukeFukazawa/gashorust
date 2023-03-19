@@ -67,23 +67,29 @@ pub fn run() {
             let mut g:u8 = 0;
             let mut b:u8 = 0;
             if hprime < 1.0 {
-                r = (c * 255.0) as u8;
-                g = (xprime * 255.0) as u8;
+                r = (v[x][y] * 255.0) as u8;
+                g = ((v[x][y] - c + xprime) * 255.0) as u8;
+                b = ((v[x][y] - c) * 255.0) as u8;
             } else if hprime < 2.0 {
-                r = (xprime * 255.0) as u8;
-                g = (c * 255.0) as u8;
+                r = ((v[x][y] - c + xprime) * 255.0) as u8;
+                g = (v[x][y] * 255.0) as u8;
+                b = ((v[x][y] - c) * 255.0) as u8;
             } else if hprime < 3.0 {
-                g = (c * 255.0) as u8;
-                b = (xprime * 255.0) as u8;
+                r = ((v[x][y] - c) * 255.0) as u8;
+                g = (v[x][y] * 255.0) as u8;
+                b = ((v[x][y] - c + xprime) * 255.0) as u8;
             } else if hprime < 4.0 {
-                g = (xprime * 255.0) as u8;
-                b = (c * 255.0) as u8;
+                r = ((v[x][y] - c) * 255.0) as u8;
+                g = ((v[x][y] - c + xprime) * 255.0) as u8;
+                b = (v[x][y] * 255.0) as u8;
             } else if hprime < 5.0 {
-                r = (xprime * 255.0) as u8;
-                b = (c * 255.0) as u8;
+                r = ((v[x][y] - c + xprime) * 255.0) as u8;
+                g = ((v[x][y] - c) * 255.0) as u8;
+                b = (v[x][y] * 255.0) as u8;
             } else if hprime < 6.0 {
-                r = (c * 255.0) as u8;
-                b = (xprime * 255.0) as u8;
+                r = (v[x][y] * 255.0) as u8;
+                g = ((v[x][y] - c) * 255.0) as u8;
+                b = ((v[x][y] - c + xprime) * 255.0) as u8;
             }
             let pixel = Rgb([r, g, b]);
 
