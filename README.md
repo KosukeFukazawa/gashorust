@@ -6,9 +6,8 @@ Image processing 100 on Rust.
 個人のRust勉強用に作成したものであるため、冗長なコードや間違った使い方が多く含まれると思われます。
 
 ## Caution
-このリポジトリは作業中であるため、完成しておりません。
+このリポジトリは作業中であるため、完成しておりません。  
 空いた時間で作業しているため、更新頻度は非常に遅いです。  
-なるべくImageクレート以外は使用しない、単純な実装をしていきます。
 
 ## Install
 1. Please install Rust from [Rust official webpage](https://www.rust-lang.org/learn/get-started). 
@@ -23,6 +22,7 @@ Please refer to it.
 ### dependencies
 #### Crate
 * `image` : read and write image files.
+* `rayon` : pararrel processing.
 
 ## How to use?
 After moving to `gashorust/`, execute the following command
